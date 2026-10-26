@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Montserrat", system-ui, -apple-system, sans-serif;
+  
+  --color-burgundy: #7B1030;
+  --color-burgundy-dark: #580B22;
+  --color-burgundy-light: #9B1A40;
+  
+  --color-plum: #3D0A1A;
+  --color-plum-dark: #20040D;
+  --color-plum-light: #4E1225;
+  
+  --color-ivory: #FAF6F0;
+  --color-ivory-light: #FDFAF6;
+  --color-ivory-warm: #F4EBE0;
+  --color-ivory-dark: #EAE0D2;
+  
+  --color-gold: #B8975A;
+  --color-gold-light: #D4BA83;
+  --color-gold-dark: #8F723D;
+  --color-gold-muted: #C8AC75;
+  
+  --color-charcoal: #2B2B2B;
+  --color-charcoal-muted: #57534E;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Modern Luxury Glassmorphism */
+.glass-panel-light {
+  background: rgba(250, 246, 240, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(184, 151, 90, 0.25);
+}
+
+.glass-panel-dark {
+  background: rgba(61, 10, 26, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(184, 151, 90, 0.35);
+}
+
+/* Modern hairline accents */
+.modern-hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(184, 151, 90, 0.5) 20%, rgba(184, 151, 90, 0.5) 80%, transparent 100%);
+}
+
+/* Waveform pulse animation for audio visualizer */
+@keyframes waveBar {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+
+.animate-wave-1 { animation: waveBar 1.2s ease-in-out infinite; }
+.animate-wave-2 { animation: waveBar 0.9s ease-in-out infinite 0.2s; }
+.animate-wave-3 { animation: waveBar 1.4s ease-in-out infinite 0.4s; }
+.animate-wave-4 { animation: waveBar 1.1s ease-in-out infinite 0.1s; }
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #B8975A;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7B1030;
+}
+
