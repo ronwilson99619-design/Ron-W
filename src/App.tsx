@@ -19,6 +19,7 @@ import { ProductionModal } from './components/ProductionModal';
 import { WorkshopRegisterModal } from './components/WorkshopRegisterModal';
 import { AdminPortalModal } from './components/AdminPortalModal';
 import { AmbientPlayer } from './components/AmbientPlayer';
+import { WatermarkOverlay } from './components/WatermarkOverlay';
 import {
   GalleryItem,
   ServiceItem,
@@ -251,6 +252,9 @@ export default function App() {
 
       {/* Atmospheric Ballet Studio Piano Accompaniment */}
       <AmbientPlayer />
+
+      {/* Low-Opacity Site-Wide Watermark Overlay */}
+      <WatermarkOverlay />
 
       {/* Interactive Modals */}
       <LightboxModal

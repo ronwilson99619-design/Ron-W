@@ -2,5 +2,7 @@
   "name": "Dance Tours | British Ballet Workshops & Global Experiences",
   "description": "British style ballet workshops, dance and tourism experiences around the world, and ballet productions featuring top dancers from The Royal Ballet.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

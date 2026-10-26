@@ -132,6 +132,11 @@ export const Footer: React.FC = () => {
               <div className="pt-2 text-xs text-[#FAF6F0]/60">
                 <p>Artistic Director & Tour Curator: <strong>{COMPANY_INFO.owner}</strong></p>
                 <p className="mt-1">In association with premier dancers of The Royal Ballet & International Companies.</p>
+                <div className="mt-3 pt-3 border-t border-[#B8975A]/20 flex items-center gap-1.5 text-xs text-[#D4BA83]">
+                  <span className="font-serif italic text-sm text-[#D4BA83]">Digital Experience</span>
+                  <span className="text-[#B8975A]/40">·</span>
+                  <span className="font-sans font-medium text-white/90">Designed by Vintage Design Lab</span>
+                </div>
               </div>
             </div>
           </div>
@@ -139,7 +144,13 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar with Back to Top */}
         <div className="pt-8 border-t border-[#B8975A]/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#FAF6F0]/60 font-sans">
-          <p>© {new Date().getFullYear()} Dance Tours. All rights reserved. Refined in the tradition of the Royal Opera House.</p>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+            <span>© {new Date().getFullYear()} Dance Tours. All rights reserved.</span>
+            <span className="hidden sm:inline text-[#B8975A]/40">·</span>
+            <span>Refined in the tradition of the Royal Opera House.</span>
+            <span className="hidden sm:inline text-[#B8975A]/40">·</span>
+            <span className="text-[#D4BA83] font-medium">Designed by Vintage Design Lab</span>
+          </div>
 
           <button
             onClick={scrollToTop}

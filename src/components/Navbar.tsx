@@ -39,6 +39,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquire, onOpenAdmin, onQu
             <span className="hidden sm:inline text-[#D4BA83] font-medium">The Royal Ballet Heritage</span>
             <span className="hidden sm:inline text-[#B8975A]/40">/</span>
             <span>Worldwide Workshops & Productions</span>
+            <span className="hidden xl:inline text-[#B8975A]/40">·</span>
+            <span className="hidden xl:inline text-[#D4BA83]/80 font-medium">Designed by Vintage Design Lab</span>
           </div>
 
           <div className="flex items-center gap-4 text-[#FAF6F0]/85">
@@ -178,6 +180,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquire, onOpenAdmin, onQu
                 </button>
                 <div className="text-center text-xs text-[#57534E] pt-2">
                   <span>Founder: {COMPANY_INFO.owner} · {COMPANY_INFO.phone}</span>
+                  <p className="text-[10px] text-[#8F723D] uppercase tracking-wider font-medium mt-1">
+                    Designed by Vintage Design Lab
+                  </p>
                 </div>
               </div>
             </div>

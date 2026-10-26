@@ -40,6 +40,9 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenEnquire }) => 
                 <p className="text-[11px] font-sans uppercase tracking-widest text-[#57534E] mt-1">
                   Founder & Artistic Director: {COMPANY_INFO.owner}
                 </p>
+                <p className="text-[10px] font-sans text-[#8F723D] tracking-wider mt-1.5 uppercase font-medium">
+                  Designed by Vintage Design Lab
+                </p>
               </div>
 
               {/* Classical Corner Notches */}

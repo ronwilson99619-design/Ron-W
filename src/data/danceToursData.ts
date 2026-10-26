@@ -116,6 +116,7 @@ export const COMPANY_INFO = {
   logoUrl: "/assets/aistudio/Dance_tour_Justin_34cedc7b.png",
   founded: "2012",
   accreditation: "Featuring Artists from The Royal Ballet & Premier International Companies",
+  designedBy: "Vintage Design Lab",
 };
 
 export const HERO_SLIDES = [
